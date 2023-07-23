@@ -20,3 +20,5 @@ if (isset($_POST['action'])) {
     $toDoListJson = json_encode($toDoList);
     file_put_contents('database.json', $toDoListJson);
 }
+
+echo $toDoListJson;
